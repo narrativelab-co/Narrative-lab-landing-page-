@@ -1,0 +1,47 @@
+.selected-work {
+  background-color: #ffffff;
+  border-top: 1px solid #f0f0f0;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.work-card {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 3px solid #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.work-card:hover {
+  background-color: #f0f0f0;
+}
+
+.work-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.work-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-card {
+    padding: 30px;
+  }
+}
